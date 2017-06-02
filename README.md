@@ -1,13 +1,13 @@
 # Nuxt.js with Egg
 
-> [Egg.js](http://eggjs.org/) + [Nuxt.js](https://nuxtjs.org) = :zap:
+> [Egg.js](http://eggjs.org/) + [Nuxt.js](https://nuxtjs.org) = EggNuxt
 
 ## Installation
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ```bash
-vue init nuxt/Egg <project-name>
+vue init xudong/egg-nuxt <project-name>
 cd <project-name> # move to your project
 npm install # or yarn install*[see note below]
 ```
