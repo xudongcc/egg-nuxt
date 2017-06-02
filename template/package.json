@@ -1,0 +1,51 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "private": true,
+  "dependencies": {
+    "egg": "^1.2.1",
+    "nuxt": "^0.10.7"
+  },
+  "devDependencies": {
+    "autod": "^2.8.0",
+    "autod-egg": "^1.0.0",
+    "babel-eslint": "^7.2.3",
+    "egg-bin": "^3.3.2",
+    "egg-ci": "^1.6.0",
+    "egg-mock": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "EGG_SERVER_ENV=prod node index.js",
+    "build": "nuxt build",
+    "dev": "egg-bin dev --port 3000",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "6"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "{{ author }}",
+  "license": "MIT"
+}
